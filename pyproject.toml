@@ -1,0 +1,19 @@
+[project]
+name = "echotrace"
+version = "0.0.1"
+description = "A reading companion for totally blind learners: the screen or a PDF read aloud in Arabic and English, offline first."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+voice = ["supertonic==1.3.1", "soundfile"]
+
+[tool.setuptools.packages.find]
+include = ["echotrace*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

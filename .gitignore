@@ -1,0 +1,18 @@
+# downloaded data, environments, generated output
+bench/data/
+bench/.venv-tts/
+bench/.env
+bench/results/*
+!bench/results/.gitkeep
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# audio is generated, never committed
+*.wav
+
+.DS_Store
